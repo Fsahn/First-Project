@@ -20,14 +20,7 @@ function deleteToDo(e){ // X 버튼을 누르면 목록에서 항목 삭제
     let parentNode = remove.parentNode;
     parentNode.removeChild(remove);
 }
- 
-function checkToDo(e){  // 체크박스를 클릭한 경우 글씨 색을 연하게 바꿔준다.
-    const todo = e.target.nextSibling;
-    if(e.target.checked){
-        todo.style.color = "#dddddd";
-    }else {
-        todo.style.color = "#000000";
-    }
+
 }
 
 function clearTodoList(e){ //목록 전체 삭제하는 경우
